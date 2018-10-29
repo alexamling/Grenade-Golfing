@@ -259,8 +259,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 286198308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.02, z: -14.958}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 2.37, z: -13.85}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -272,7 +272,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 286198308}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.05
   m_Drag: 0.1
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -376,6 +376,48 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300006, guid: 34f0d0dd1c60aff4891f4cff06d9479d, type: 3}
+--- !u!1001 &825604154
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -14.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1014947881 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 34f0d0dd1c60aff4891f4cff06d9479d,
@@ -395,6 +437,26 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 34f0d0dd1c60aff4891f4cff06d9479d, type: 3}
+--- !u!1 &1108205786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1055531290974108, guid: cd115b5386b71054eaf7fc2e2a5460a7,
+    type: 2}
+  m_PrefabInternal: {fileID: 825604154}
+--- !u!114 &1108205791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108205786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6a2c81753854940957182b609d15cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 286198308}
+  Delay: 3
+  Power: 100
+  Radius: 100
 --- !u!1001 &1301400565
 Prefab:
   m_ObjectHideFlags: 0
@@ -530,8 +592,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: 34f0d0dd1c60aff4891f4cff06d9479d,
     type: 3}
   m_PrefabInternal: {fileID: 1301400565}
---- !u!64 &2026383123
-MeshCollider:
+--- !u!65 &2026383123
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -539,8 +601,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300012, guid: 34f0d0dd1c60aff4891f4cff06d9479d, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 0.5, z: 2}
+  m_Center: {x: 0, y: 0.64, z: 0}
