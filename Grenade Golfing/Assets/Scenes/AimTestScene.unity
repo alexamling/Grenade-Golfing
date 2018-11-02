@@ -378,6 +378,7 @@ GameObject:
   - component: {fileID: 793517386}
   - component: {fileID: 793517385}
   - component: {fileID: 793517384}
+  - component: {fileID: 793517387}
   m_Layer: 0
   m_Name: ArcTest
   m_TagString: Untagged
@@ -504,6 +505,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &793517387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793517383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6181897daacc74a85bf8feb309c449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwable: {fileID: 114233622073673982, guid: 98ca26e0c3c09b84988df96ecd65adb7,
+    type: 2}
+  throwForce: 5.9
 --- !u!1 &831439841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,40 +1379,40 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+    - target: {fileID: 4914636245188638, guid: 98ca26e0c3c09b84988df96ecd65adb7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+    - target: {fileID: 4914636245188638, guid: 98ca26e0c3c09b84988df96ecd65adb7, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+    - target: {fileID: 4914636245188638, guid: 98ca26e0c3c09b84988df96ecd65adb7, type: 2}
       propertyPath: m_LocalPosition.z
       value: -4
       objectReference: {fileID: 0}
-    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+    - target: {fileID: 4914636245188638, guid: 98ca26e0c3c09b84988df96ecd65adb7, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+    - target: {fileID: 4914636245188638, guid: 98ca26e0c3c09b84988df96ecd65adb7, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+    - target: {fileID: 4914636245188638, guid: 98ca26e0c3c09b84988df96ecd65adb7, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+    - target: {fileID: 4914636245188638, guid: 98ca26e0c3c09b84988df96ecd65adb7, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4769331640726784, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+    - target: {fileID: 4914636245188638, guid: 98ca26e0c3c09b84988df96ecd65adb7, type: 2}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cd115b5386b71054eaf7fc2e2a5460a7, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: 98ca26e0c3c09b84988df96ecd65adb7, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1809165605
 GameObject:
@@ -1484,21 +1499,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1890638562 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1055531290974108, guid: cd115b5386b71054eaf7fc2e2a5460a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1741732260}
---- !u!114 &1890638563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1890638562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4647233dede38a74ea9e6ec9efcc5a3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceScale: 3.15
-  launchForce: {x: 2, y: 5, z: 0}
